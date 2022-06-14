@@ -1,0 +1,204 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="te">
+	<siteinfo>
+		<sitename>tewiki</sitename>
+		<dbname>indicwiki</dbname>
+		<base>https://tewiki.iiit.ac.in/index.php/%E0%B0%AE%E0%B1%8A%E0%B0%A6%E0%B0%9F%E0%B0%BF_%E0%B0%AA%E0%B1%87%E0%B0%9C%E0%B1%80</base>
+		<generator>MediaWiki 1.34.0</generator>
+		<case>first-letter</case>
+		<namespaces>
+			<namespace key="-2" case="first-letter">మీడియా</namespace>
+			<namespace key="-1" case="first-letter">ప్రత్యేక</namespace>
+			<namespace key="0" case="first-letter" />
+			<namespace key="1" case="first-letter">చర్చ</namespace>
+			<namespace key="2" case="first-letter">వాడుకరి</namespace>
+			<namespace key="3" case="first-letter">వాడుకరి చర్చ</namespace>
+			<namespace key="4" case="first-letter">Project</namespace>
+			<namespace key="5" case="first-letter">Project చర్చ</namespace>
+			<namespace key="6" case="first-letter">దస్త్రం</namespace>
+			<namespace key="7" case="first-letter">దస్త్రంపై చర్చ</namespace>
+			<namespace key="8" case="first-letter">మీడియావికీ</namespace>
+			<namespace key="9" case="first-letter">మీడియావికీ చర్చ</namespace>
+			<namespace key="10" case="first-letter">మూస</namespace>
+			<namespace key="11" case="first-letter">మూస చర్చ</namespace>
+			<namespace key="12" case="first-letter">సహాయం</namespace>
+			<namespace key="13" case="first-letter">సహాయం చర్చ</namespace>
+			<namespace key="14" case="first-letter">వర్గం</namespace>
+			<namespace key="15" case="first-letter">వర్గం చర్చ</namespace>
+			<namespace key="828" case="first-letter">మాడ్యూల్</namespace>
+			<namespace key="829" case="first-letter">మాడ్యూల్ చర్చ</namespace>
+			<namespace key="2300" case="first-letter">Gadget</namespace>
+			<namespace key="2301" case="first-letter">Gadget talk</namespace>
+			<namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+			<namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+			<namespace key="2600" case="first-letter">Topic</namespace>
+		</namespaces>
+	</siteinfo>
+
+
+
+
+	<page>
+		<title>ఉసేన్ సెయింట్ లియో బోల్ట్</title>
+		<ns>0</ns>
+		<id>795001</id>
+		<revision>
+			<id>795001</id>
+			<timestamp>2022-05-16T07-51-40Z</timestamp>
+			<contributor>
+				<username>SantoshJonnakuti</username>
+				<id>18884</id>
+			</contributor>
+			<comment>xmlpage created</comment>
+			<model>wikitext</model>
+			<format>text/x-wiki</format>
+			<text xml:space="preserve" bytes="2927">
+
+				{{Infobox sportsperson
+				| honorific prefix = [[The Honourable]]
+				| name = ఉసేన్ బోల్ట్
+				| honorific_suffix = {{post nominals|size=100|country=JAM|list=[[Order of Jamaica|OJ]] [[Order of Distinction|CD]]}} {{post-nominals|OLY|size=100%}}
+				| fullname = ఉసేన్ సెయింట్ లియో బోల్ట్
+				| nickname = లైటెనింగ్ బోల్ట్<ref name="Focus"/>
+				| image = Usain Bolt after 4 × 100 m Rio 2016.jpg
+				| caption = [[2016 వేసవి ఒలింపిక్స్]] లో బోల్ట్
+				| nationality = [[జమైకన్లు| జమైకన్]]
+				| sport = [[ట్రాక్ అండ్ ఫీల్డ్]]
+				| event = [[స్ప్రింట్ (రన్నింగ్)| స్ప్రింట్ లు]]
+				| club = [[రేసర్స్ ట్రాక్ క్లబ్]]
+				| coach = [[గ్లెన్ మిల్స్]]<ref>{{cite web |url=https://www.telegraph.co.uk/usain-bolt-worlds-fastest-man/0/glen-mills-the-man-behind-usain-bolts-record-shattering-career/ |archive-url=https://ghostarchive.org/archive/20220111/https://www.telegraph.co.uk/usain-bolt-worlds-fastest-man/0/glen-mills-the-man-behind-usain-bolts-record-shattering-career/ |archive-date=11 January 2022 |url-access=subscription |url-status=live |title=Glen Mills: the man behind Usain Bolt's record-shattering career |last=Thomas |first=Claire |publisher=[[The Daily Telegraph]] |date=25 July 2016 |access-date=29 January 2019}}{{cbignore}}</ref>
+				| retired = 2017<ref>{{cite web |url=http://money.com/money/4889506/usain-bolt-retires-career-earnings-net-worth/ |title=Usain Bolt Is Retiring. Here's How He Made Over $100 Million in 10 Years |last=Wile |first=Rob |publisher=[[Money (magazine)|Money]] |date=11 August 2017 |access-date=29 January 2019}}</ref>
+				| birth_date = {{Birth date and age|df=yes|1986|8|21}}
+				| birth_place = [[షేర్ వుడ్ కంటెంట్]], జమైకా
+				| height = 1.95 m<ref>{{cite news|last1=Thomas|first1=Claire|title=Built for speed: what makes Usain Bolt so fast?|url=https://www.telegraph.co.uk/usain-bolt-worlds-fastest-man/0/built-for-speed-what-makes-usain-bolt-so-fast/ |newspaper=The Telegraph  |date=26 July 2016|access-date=20 August 2016 |url-status=live |archive-url=https://web.archive.org/web/20160821183731/http://www.telegraph.co.uk/usain-bolt-worlds-fastest-man/0/built-for-speed-what-makes-usain-bolt-so-fast/|archive-date=21 August 2016}}</ref>
+				| weight = {{convert|94|kg|lb}}<ref name="Usain BOLT">{{cite web | url = http://usainbolt.com/bio/ | title = Usain BOLT | publisher = usainbolt.com | access-date = 29 September 2015 | url-status=live | archive-url = https://web.archive.org/web/20150919093156/http://usainbolt.com/bio/ | archive-date = 19 September 2015 | df = dmy-all }}</ref>
+				| pb = {{Unbulleted list
+				|'''40 yd''': 4.22 ([[Atlanta]], 2019)<ref>{{cite web |url=https://olympics.nbcsports.com/2019/02/02/usain-bolt-having-fun-at-super-bowl-ties-nfl-combine-40-yard-dash-record/ |title=Usain Bolt having fun at Super Bowl, 'ties' NFL Combine 40-yard dash record |last=Clark |first=Nate |publisher=[[NBC]] |date=2 February 2019 |access-date=2 February 2019}}</ref>{{refn|group=note|Not a competition event.}}
+				|'''100 m''': 9.58 '''[[Men's 100 metres world record progression|WR]]''' ([[2009 World Championships in Athletics|Berlin 2009]])<ref name="NY" />
+				|'''150 m straight''': 14.35 '''[[150 metres|WB]]'''{{refn|group=note|name=150m|This is not an official world record as the IAAF, the international athletics governing body, does not recognise the distance.}}<br />([[Great Manchester Run|Manchester]] 2009)<ref name="IAAF" />
+				|'''200 m''': 19.19 '''[[Men's 200 metres world record progression|WR]]''' ([[2009 World Championships in Athletics|Berlin 2009]])<ref name="TTG" />
+				|'''300 m''': 30.97 '''[[List of Jamaican records in athletics|NR]]''' ([[Golden Spike Ostrava|Ostrava]] 2010)<ref name="IAAFProfile"/>
+				|'''400 m''': 45.28 ([[Kingston, Jamaica|Kingston]] 2007)<ref name="IAAFProfile"/>
+				|'''800 m''': 2:05<ref>{{cite web|date=2021-07-08|title=Usain Bolt to run an 800m|url=https://runningmagazine.ca/the-scene/usain-bolt-to-run-an-800m/|access-date=2021-07-24|website=Canadian Running Magazine|language=en-US}}</ref>
+				}}
+				| show-medals = yes
+				| medaltemplates =
+				{{Medal|Sport|Men's [[Sport of athletics|athletics]]}}
+				{{Medal|Country|{{JAM}}}}
+				{{MedalCount|total=yes
+				|[[Summer Olympics|Olympic Games]]|8|0|0
+				|[[IAAF World Championships in Athletics|World Championships]]|11|2|1
+				|[[IAAF World Relays|World Relays]]|0|1|0
+				|[[Central American and Caribbean Championships in Athletics|CAC Championships]]|1|0|0
+				|[[Commonwealth Games]]|1|0|0
+				|[[IAAF World Junior Championships in Athletics|World Junior Championships]]|1|2|0
+				|[[IAAF World Youth Championships in Athletics|World Youth Championships]]|1|0|0
+				}}
+				{{MedalCount|total=yes
+				|[[100 m]]|6|0|1
+				|[[200 m]]|10|1|0
+				|[[4×100 m relay]]|7|3|0
+				|[[4×400 m relay]]|0|1|0
+				}}
+				{{Medal|Competition|[[Athletics at the Summer Olympics|Olympic Games]]}}
+				{{Medal|Gold|[[2008 Summer Olympics|2008 Beijing]]|[[Athletics at the 2008 Summer Olympics – Men's 100 metres|100 m]]}}
+				{{Medal|Gold|2008 Beijing|[[Athletics at the 2008 Summer Olympics – Men's 200 metres|200 m]]}}
+				{{Medal|Gold|[[2012 Summer Olympics|2012 London]]|[[Athletics at the 2012 Summer Olympics – Men's 100 metres|100 m]]}}
+				{{Medal|Gold|2012 London|[[Athletics at the 2012 Summer Olympics – Men's 200 metres|200 m]]}}
+				{{Medal|Gold|2012 London|[[Athletics at the 2012 Summer Olympics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Gold|[[2016 Summer Olympics|2016 Rio de Janeiro]]|[[Athletics at the 2016 Summer Olympics – Men's 100 metres|100 m]]}}
+				{{Medal|Gold|2016 Rio de Janeiro|[[Athletics at the 2016 Summer Olympics – Men's 200 metres|200 m]]}}
+				{{Medal|Gold|2016 Rio de Janeiro|[[Athletics at the 2016 Summer Olympics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|DQ|2008 Beijing|[[Athletics at the 2008 Summer Olympics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Competition|[[IAAF World Championships in Athletics|World Championships]] }}
+				{{Medal|Gold|[[2009 World Championships in Athletics|2009 Berlin]]|[[2009 World Championships in Athletics – Men's 100 metres|100 m]]}}
+				{{Medal|Gold|2009 Berlin|[[2009 World Championships in Athletics – Men's 200 metres|200 m]]}}
+				{{Medal|Gold|2009 Berlin|[[2009 World Championships in Athletics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Gold|[[2011 World Championships in Athletics|2011 Daegu]]|[[2011 World Championships in Athletics – Men's 200 metres|200 m]]}}
+				{{Medal|Gold|2011 Daegu|[[2011 World Championships in Athletics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Gold|[[2013 World Championships in Athletics|2013 Moscow]]|[[2013 World Championships in Athletics – Men's 100 metres|100 m]]}}
+				{{Medal|Gold|2013 Moscow|[[2013 World Championships in Athletics – Men's 200 metres|200 m]]}}
+				{{Medal|Gold|2013 Moscow|[[2013 World Championships in Athletics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Gold|[[2015 World Championships in Athletics|2015 Beijing]]|[[2015 World Championships in Athletics – Men's 100 metres|100 m]]}}
+				{{Medal|Gold|2015 Beijing|[[2015 World Championships in Athletics – Men's 200 metres|200 m]]}}
+				{{Medal|Gold|2015 Beijing|[[2015 World Championships in Athletics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Silver|[[2007 World Championships in Athletics|2007 Osaka]]|[[2007 World Championships in Athletics – Men's 200 metres|200 m]]}}
+				{{Medal|Silver|2007 Osaka|[[2007 World Championships in Athletics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Bronze|[[2017 World Championships in Athletics|2017 London]]|[[2017 World Championships in Athletics – Men's 100 metres|100 m]]}}
+				{{Medal|Competition|[[IAAF World Relays|World Athletics Relays]]}}
+				{{Medal|Silver|[[2015 IAAF World Relays|2015 Nassau]]|[[2015 IAAF World Relays – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Competition|[[IAAF Diamond League|Diamond League]]}}
+				{{Medal|Winner|[[2012 IAAF Diamond League|2012]]|100 metres}}
+				{{Medal|Competition|[[Central American and Caribbean Championships|CAC Championships]]}}
+				{{Medal|Gold|[[2005 Central American and Caribbean Championships|2005 Nassau]]|[[2005 Central American and Caribbean Championships in Athletics – Results|200 m]]}}
+				{{Medal|Competition|[[Commonwealth Games]]}}
+				{{Medal|Gold|[[2014 Commonwealth Games|2014 Glasgow]]|[[Athletics at the 2014 Commonwealth Games – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Competition|[[IAAF World Junior Championships in Athletics|World Junior Championships]]}}
+				{{Medal|Gold|[[2002 World Junior Championships in Athletics|2002 Kingston]]|[[2002 World Junior Championships in Athletics – Men's 200 metres|200 m]]}}
+				{{Medal|Silver|[[2002 World Junior Championships in Athletics|2002 Kingston]]|[[2002 World Junior Championships in Athletics – Men's 4 × 100 metres relay|4×100 m relay]]}}
+				{{Medal|Silver|[[2002 World Junior Championships in Athletics|2002 Kingston]]|[[2002 World Junior Championships in Athletics – Men's 4 × 400 metres relay|4×400 m relay]]}}
+				{{Medal|Competition|[[IAAF World Youth Championships in Athletics|World Youth Championships]]}}
+				{{Medal|Gold|[[2003 World Youth Championships in Athletics|2003 Sherbrooke]]|200 m}}
+				{{MedalCompetition|[[Pan American Junior Athletics Championships|Pan American Junior Championships]]}}
+				{{MedalGold|[[2003 Pan American Junior Athletics Championships|2003 Bridgetown]]|200 m}}
+				{{MedalSilver|[[2003 Pan American Junior Athletics Championships|2003 Bridgetown]]|4×100 m relay}}
+				{{Medal|Competition|[[Central American and Caribbean Junior Championships in Athletics|CAC Junior Championships]] (U17)}}
+				{{Medal|Gold |[[2002 Central American and Caribbean Junior Championships in Athletics|2002 Bridgetown]]| 200 m}}
+				{{Medal|Gold |[[2002 Central American and Caribbean Junior Championships in Athletics|2002 Bridgetown]]| 400 m}}
+				{{Medal|Gold |[[2002 Central American and Caribbean Junior Championships in Athletics|2002 Bridgetown]]| 4×100 m relay}}
+				{{Medal|Gold |[[2002 Central American and Caribbean Junior Championships in Athletics|2002 Bridgetown]]| 4×400 m relay}}
+				{{Medal|Competition|[[CARIFTA Games]] <br /> Junior (U20)}}
+				{{Medal|Gold |[[2003 CARIFTA Games|2003 Port of Spain]] | 200 m}}
+				{{Medal|Gold |[[2003 CARIFTA Games|2003 Port of Spain]] | 400 m}}
+				{{Medal|Gold |[[2003 CARIFTA Games|2003 Port of Spain]] | 4x100 m relay}}
+				{{Medal|Gold |[[2003 CARIFTA Games|2003 Port of Spain]] | 4x400 m relay}}
+				{{Medal|Gold |[[2004 CARIFTA Games|2004 Hamilton]] | 200 m}}
+				{{Medal|Gold |[[2004 CARIFTA Games|2004 Hamilton]] | 4x100 m relay}}
+				{{Medal|Gold |[[2004 CARIFTA Games|2004 Hamilton]] | 4x400 m relay}}
+				{{MedalCompetition|[[CARIFTA Games]] <br /> Junior (U17)}}
+				{{MedalGold |[[2002 CARIFTA Games|2002 Nassau]] | 200m}}
+				{{MedalGold |[[2002 CARIFTA Games|2002 Nassau]] | 400m}}
+				{{MedalGold |[[2002 CARIFTA Games|2002 Nassau]] | 4x100 m relay}}
+				{{MedalGold |[[2002 CARIFTA Games|2002 Nassau]] | 4x400 m relay}}
+				{{MedalSilver |[[2001 CARIFTA Games|2001 Bridgetown]] | 200m}}
+				{{MedalSilver |[[2001 CARIFTA Games|2001 Bridgetown]] | 400m}}
+				{{MedalSilver |[[2001 CARIFTA Games|2001 Bridgetown]] | 4x100 m relay}}
+				{{Medal|Country|[[File:Americas (orthographic projection).svg|20px]] Americas}}
+				{{Medal|Competition|[[IAAF Continental Cup|World Cup]]}}
+				{{Medal|Silver|[[2006 IAAF World Cup|2006 Athens]]|200 m}}
+				}}
+
+				ఉసేన్ సెయింట్ లియో బోల్ట్  [https://te.wikipedia.org/wiki/జమైకా జమైకా][JAM] దేశం కి చెందిన క్రీడాకారుడు.అతడు [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్స్] లో జమైకా[JAM] తరపున అథ్లెటిక్స్ లో పాల్గొన్నాడు.
+				ఉసేన్ సెయింట్ లియో బోల్ట్ 21-08-1986<ref>{{Cite web|url=https://dbpedia.org/page/Usain_Bolt|title= Dbpedia Page of Usain St. Leo Bolt|language=en}}</ref> తేదీన షేర్వుడ్ కంటెంట్ లో జన్మించాడు.
+
+				=వ్యక్తిగత జీవితము=
+				ఈ అథ్లెట్ జమైకాకి  చెందిన వారు.
+				ఉసేన్ సెయింట్ లియో బోల్ట్ యొక్క స్వస్థలం జమైకన్లు.
+
+				=క్రీడా జీవితం=
+				ఈ క్రీడాకారుడు ఎత్తు : 196.0 మీటర్లు.
+				ఉసేన్ సెయింట్ లియో బోల్ట్ బరువు 95.0 కిలోలు.
+				ఉసేన్ సెయింట్ లియో బోల్ట్కు అథ్లెటిక్స్ లో గ్లెన్ మిల్స్ కోచింగ్ ఇచ్చారు.
+				ఉసేన్ సెయింట్ లియో బోల్ట్ రేసర్లు ట్రాక్ క్లబ్ క్లబ్ కి చెందినవాడు.
+				=== [https://te.wikipedia.org/wiki/2004_వేసవి_ఒలింపిక్_క్రీడలు 2004 ఒలింపిక్స్] ===
+				ఉసేన్ సెయింట్ లియో బోల్ట్ 2004 [https://te.wikipedia.org/wikiఅథినా అథినా] నగరంలో నిర్వహించబడిన సమ్మర్ ఒలింపిక్స్లో అథ్లెటిక్స్ డిసిప్లిన్ లో అథ్లెటిక్స్ పురుషుల 200 మీటర్లు ఈవెంట్లో పాల్గొనగా [https://te.wikipedia.org/wiki/పతకం పతకం] గెల్వకుండానే వెనుతిరిగాడు.
+				=== [https://te.wikipedia.org/wiki/2008_వేసవి_ఒలింపిక్_క్రీడలు 2008 ఒలింపిక్స్] ===
+				[https://te.wikipedia.org/wikiబీజింగ్ బీజింగ్] నగరంలో నిర్వహించబడిన 2008 సమ్మర్ ఒలింపిక్స్లో ఉసేన్ సెయింట్ లియో బోల్ట్ అథ్లెటిక్స్ డిసిప్లిన్ లో అథ్లెటిక్స్ పురుషుల 100 మీటర్లు, అథ్లెటిక్స్ పురుషుల 200 మీటర్లు, అథ్లెటిక్స్ పురుషుల 4 x 100 మీటర్ల రిలే ఈవెంట్లలో పాల్గొనగా , అథ్లెటిక్స్ పురుషుల 100 మీటర్లు లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం], అథ్లెటిక్స్ పురుషుల 200 మీటర్లు లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం] గెలుచుకున్నాడు.
+				=== 2012 ఒలింపిక్స్ ===
+				[https://te.wikipedia.org/wikiలండన్ లండన్] నగరంలో నిర్వహించబడిన 2012 సమ్మర్ ఒలింపిక్స్లో ఉసేన్ సెయింట్ లియో బోల్ట్ అథ్లెటిక్స్ డిసిప్లిన్ లో అథ్లెటిక్స్ పురుషుల 100 మీటర్లు, అథ్లెటిక్స్ 20 మెట్ల x 100 మీటర్ల రిలే, అథ్లెటిక్స్ పురుషుల 4 x 100 మీటర్ల రిలే ఈవెంట్లలో పాల్గొనగా , అథ్లెటిక్స్ పురుషుల 100 మీటర్లు లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం], అథ్లెటిక్స్ 20 మెట్ల x 100 మీటర్ల రిలే లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం], అథ్లెటిక్స్ పురుషుల 4 x 100 మీటర్ల రిలే లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం] గెలుచుకున్నాడు.
+				=== 2016 ఒలింపిక్స్ ===
+				[https://te.wikipedia.org/wikiరియో_డి_జనీరో రియో డి జనీరో] నగరంలో నిర్వహించబడిన 2016 సమ్మర్ ఒలింపిక్స్లో ఉసేన్ సెయింట్ లియో బోల్ట్ అథ్లెటిక్స్ డిసిప్లిన్ లో అథ్లెటిక్స్ పురుషుల 100 మీటర్లు, అథ్లెటిక్స్ పురుషుల 200 మీటర్లు, అథ్లెటిక్స్ పురుషుల 4 x 100 మీటర్ల రిలే ఈవెంట్లలో పాల్గొనగా , అథ్లెటిక్స్ పురుషుల 100 మీటర్లు లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం], అథ్లెటిక్స్ పురుషుల 200 మీటర్లు లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం], అథ్లెటిక్స్ పురుషుల 4 x 100 మీటర్ల రిలే లో గోల్డ్ [https://te.wikipedia.org/wiki/పతకం పతకం] గెలుచుకున్నాడు.
+
+
+				==ప్రస్తావనలు==
+				<references />
+
+				[[వర్గం:ఒలింపిక్ అథ్లెట్]]
+				[[వర్గం:జమైకాఅథ్లెట్]]
+				[[వర్గం:అథ్లెటిక్స్అథ్లెట్]]
+			</text>
+			<sha1>361wbnq0u5pdqb87yq2rcay5ay9ihuq</sha1>
+		</revision>
+	</page>
+	
+
+</mediawiki>

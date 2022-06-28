@@ -277,10 +277,7 @@
 
 {# To get the Professional Data #}
 {%- macro get_professional_data(professionalData) -%}
-    {%- for line in professionalData -%}
-        {%- set p_line = line + '\n' -%}
-        {{- p_line -}}
-    {%- endfor -%}
+    {{- professionalData -}}
 {%- endmacro -%}
 
 {# To get the References #}

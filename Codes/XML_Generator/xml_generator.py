@@ -272,7 +272,6 @@ def genXML(name, i, page_id):
         iCount += 1
       else:
         wCount += 1
-
   XMLFileObj = open('/content/drive/MyDrive/IndicWiki-OlympicGames/Athletes-Data/XML/Sheet-' + i +'.xml', 'a')
   XMLFileObj.write('</mediawiki>')
   XMLFileObj.close()

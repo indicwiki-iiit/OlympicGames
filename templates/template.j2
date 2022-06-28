@@ -206,9 +206,8 @@
 {%- macro get_nationality_line(nationality, name) -%}
     {% if nationality and nationality != 'None' %}
         {%- set nationality_line = [
-                name + ' జాతీయత ' + nationality + '.\n',
-                'ఈ ' + v1 + ' జాతీయత ' + nationality + '.\n',
                 'ఈ అథ్లెట్ ' + nationality + 'కి  చెందిన వారు.\n',
+                'ఈ ' + v1 + ' ' + nationality + 'కి  చెందిన వారు.\n',
         ] | random
         -%}
     {% else %}
@@ -222,9 +221,9 @@
 {%- macro get_height_line(height, name) -%}
     {% if height and height != '' %}
         {%- set height_line = [
-                name +  ' ఎత్తు ' + height + ' మీటర్లు.\n',
-                'ఈ ' + v1 +  ' ఎత్తు :' + height + ' మీటర్లు.\n',
-                'ఈ అథ్లెట్  ఎత్తు :' + height + ' మీటర్లు.\n',
+                name +  ' ఎత్తు ' + height + ' సెంటీమీటర్లు.\n',
+                'ఈ ' + v1 +  ' ఎత్తు :' + height + ' సెంటీమీటర్లు.\n',
+                'ఈ అథ్లెట్  ఎత్తు :' + height + ' సెంటీమీటర్లు.\n',
             ] | random
         -%}
     {% else %}

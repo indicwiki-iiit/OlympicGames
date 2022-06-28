@@ -131,7 +131,7 @@
                     '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + pob + ' లో ' + v7 + '.\n',
                 ] | random
             -%}
-        {%- else -%}
+        {%- elif dob != 'None' -%}
             {%- set dob_pob_line =
                     '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + pob + ' లో ' + v7 + '.\n'
             -%}

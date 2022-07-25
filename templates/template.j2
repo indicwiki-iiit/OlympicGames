@@ -79,9 +79,9 @@
 {# To get the Intro Line #}
 {%- macro get_intro_line(name, country, NOC, sport) -%}
     {%- set i_line = [
-        '' + name + ' [' + 'https://te.wikipedia.org/wiki/' + country.replace(' ', '_') + ' ' + country + ']' + '[' + NOC + ']' + ' దేశం తరపున ' + sport + ' లో పాల్గొనే ' + v1 + '.\n',
-        '' + name + ' ' + sport + ' లో పాల్గొనే ' + ' [' + 'https://te.wikipedia.org/wiki/' + country.replace(' ', '_') + ' ' + country + ']' + '[' + NOC + '] దేశం కి చెందిన [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్] అథ్లెట్.\n',
-        '' + name + ' ' + ' [' + 'https://te.wikipedia.org/wiki/' + country.replace(' ', '_') + ' ' + country + ']' + '[' + NOC + ']' + ' దేశం కి చెందిన ' + v1 + '.' + v3 + ' [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్స్] లో ' + country + '[' + NOC + '] తరపున ' + sport +' లో ' + v4 + '.\n',
+        '' + name + ' [' + 'https://te.wikipedia.org/wiki/' + country.replace(' ', '_') + ' ' + country + ']' + '[' + NOC + ']' + ' దేశం తరపున ' + sport + ' లో పాల్గొనే ' + v1 + '. \n',
+        '' + name + ' ' + sport + ' లో పాల్గొనే ' + ' [' + 'https://te.wikipedia.org/wiki/' + country.replace(' ', '_') + ' ' + country + ']' + '[' + NOC + '] దేశంకి చెందిన [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్] అథ్లెట్. \n',
+        '' + name + ' ' + ' [' + 'https://te.wikipedia.org/wiki/' + country.replace(' ', '_') + ' ' + country + ']' + '[' + NOC + ']' + ' దేశంకి చెందిన ' + v1 + '. ' + v3 + ' [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్స్] లో ' + country + '[' + NOC + '] తరపున ' + sport +' లో ' + v4 + '. \n',
         ] | random
     -%}
     {{- i_line -}}
@@ -127,26 +127,26 @@
     {%- if pob != 'None' -%}
         {%- if birth_year and birth_month != '' -%}
             {%- set dob_pob_line = [
-                    '' + v3 + ' ' + birth_year + ' లో ' + birth_month + ' ' + birth_date + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + 'వ తేదీన ' + pob +  ' లో ' + v7 + '.\n',
-                    '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + pob + ' లో ' + v7 + '.\n',
+                    '' + v3 + ' ' + birth_year + ' లో ' + birth_month + ' ' + birth_date + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + 'వ తేదీన ' + pob +  ' లో ' + v7 + '. \n',
+                    '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + pob + ' లో ' + v7 + '. \n',
                 ] | random
             -%}
         {%- elif dob != 'None' -%}
             {%- set dob_pob_line =
-                    '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + pob + ' లో ' + v7 + '.\n'
+                    '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + pob + ' లో ' + v7 + '. \n'
             -%}
         {%- endif -%}
     {%- else -%}
         {%- if birth_year and birth_month != '' -%}
             {%- set dob_pob_line = [
-                    '' + v3 + ' ' + birth_year + ' లో ' + birth_month + ' ' + birth_date + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + 'వ తేదీన ' + v7 + '.\n',
-                    '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + v7 + '.\n',
+                    '' + v3 + ' ' + birth_year + ' లో ' + birth_month + ' ' + birth_date + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + 'వ తేదీన ' + v7 + '. \n',
+                    '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + v7 + '. \n',
                 ] | random
             -%}
         {%- else -%}
             {%- if dob != 'None' -%}
                 {%- set dob_pob_line =
-                        '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + v7 + '.\n'
+                        '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + v7 + '. \n'
                 -%}
             {%- endif -%}
         {%- endif -%}
@@ -158,10 +158,9 @@
 {%- macro get_residence_line(name, residence, country) -%}
     {% if residence and residence != 'None' %}
         {%- set residence_line = [
-                'ఈ అథ్లెట్ ' + residence + ' లో ' + v5 + '.\n',
-                ' [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్స్] లో ' + country + ' తరపున ఆడే ఈ అథ్లెట్ ' + residence + ' లో ' + v6 + '.\n',
-                name + ' ' + residence + ' లో ' + v11 + '.\n',
-                'వారు ' + residence + ' లో నివసిస్తారు.\n',
+                'ఈ అథ్లెట్ ' + residence + ' లో ' + v5 + '. \n',
+                ' [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్స్] లో ' + country + ' తరపున ఆడే ఈ అథ్లెట్ ' + residence + ' లో ' + v6 + '. \n',
+                name + ' ' + residence + ' లో ' + v11 + '. \n',
                 ] | random
         -%}
     {% else %}
@@ -175,8 +174,8 @@
 {%- macro get_education_line(education, name) -%}
     {% if education and education !='None' %}
         {%- set education_line =  [
-                name + ' ' + education + ' లో చదువు పూర్తీ ' +  v10 + '.\n',
-                name + ' ' + education + ' లో ' + v9  + '.\n',
+                name + ' ' + education + ' లో చదువు పూర్తీ ' +  v10 + '. \n',
+                name + ' ' + education + ' లో ' + v9  + '. \n',
                 ] | random
         -%}
     {% else %}
@@ -190,9 +189,9 @@
 {%- macro get_coach_line(coach, name, sport) -%}
     {% if coach and coach != 'None' %}
         {%- set coach_line = [
-                v12 + ' ' + coach + ' కోచింగ్ ఇచ్చారు.\n',
-                name + 'కు ' + sport + ' లో ' + coach + ' కోచింగ్ ఇచ్చారు.\n',
-                '[https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్ గేమ్స్] కి కోచింగ్ ' + coach + ' ఇచ్చారు.\n',
+                v12 + ' ' + coach + ' కోచింగ్ ఇచ్చారు. \n',
+                name + ' కు ' + sport + ' లో ' + coach + ' కోచింగ్ ఇచ్చారు. \n',
+                '[https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్ గేమ్స్] కి కోచింగ్ ' + coach + ' ఇచ్చారు. \n',
             ] | random
          -%}
     {% else %}
@@ -206,8 +205,8 @@
 {%- macro get_nationality_line(nationality, name) -%}
     {% if nationality and nationality != 'None' %}
         {%- set nationality_line = [
-                'ఈ అథ్లెట్ ' + nationality + 'కి  చెందిన వారు.\n',
-                'ఈ ' + v1 + ' ' + nationality + 'కి  చెందిన వారు.\n',
+                'ఈ అథ్లెట్ ' + nationality + ' కి  ' + v8 + '. \n',
+                'ఈ ' + v1 + ' ' + nationality + ' కి  ' + v8 + '. \n',
         ] | random
         -%}
     {% else %}
@@ -221,9 +220,9 @@
 {%- macro get_height_line(height, name) -%}
     {% if height and height != '' %}
         {%- set height_line = [
-                name +  ' ఎత్తు ' + height + ' సెంటీమీటర్లు.\n',
-                'ఈ ' + v1 +  ' ఎత్తు :' + height + ' సెంటీమీటర్లు.\n',
-                'ఈ అథ్లెట్  ఎత్తు :' + height + ' సెంటీమీటర్లు.\n',
+                name +  ' ఎత్తు ' + height + ' సెంటీమీటర్లు. \n',
+                'ఈ ' + v1 +  ' ఎత్తు :' + height + ' సెంటీమీటర్లు. \n',
+                'ఈ అథ్లెట్  ఎత్తు :' + height + ' సెంటీమీటర్లు. \n',
             ] | random
         -%}
     {% else %}
@@ -237,9 +236,9 @@
 {%- macro get_weight_line(weight, name) -%}
     {% if weight and weight != '' %}
         {%- set weight_line = [
-                name +  ' బరువు ' + weight + ' కిలోలు.\n',
-                'ఈ ' + v1 +  ' బరువు :' + weight + ' కిలోలు.\n',
-                'ఈ అథ్లెట్  బరువు :' + weight + ' కిలోలు.\n',
+                name +  ' బరువు ' + weight + ' కిలోలు. \n',
+                'ఈ ' + v1 +  ' బరువు :' + weight + ' కిలోలు. \n',
+                'ఈ అథ్లెట్  బరువు :' + weight + ' కిలోలు. \n',
             ] | random
         -%}
      {% else %}
@@ -252,7 +251,7 @@
 {# To get the Club #}
 {%- macro get_club(club, name) -%}
     {%- if club and club != 'None' -%}
-        {%- set club_line = name + ' ' + club + ' క్లబ్ కి ' + v8 + '.\n'
+        {%- set club_line = name + ' ' + club + ' క్లబ్ కి ' + v8 + '. \n'
          -%}
     {%- else -%}
         {%- set club_line = '' -%}
@@ -264,8 +263,8 @@
 {%- macro get_state_of_origin(stateOfOrigin, name) -%}
     {%- if stateOfOrigin and stateOfOrigin != 'None' -%}
         {%- set state_of_origin_line = [
-                name + ' యొక్క స్వస్థలం ' + stateOfOrigin + '.\n',
-                name + ' యొక్క మూల రాష్ట్రం ' + stateOfOrigin + '.\n',
+                name + ' యొక్క స్వస్థలం ' + stateOfOrigin + '. \n',
+                name + ' యొక్క మూల రాష్ట్రం ' + stateOfOrigin + '. \n',
               ] | random
         -%}
     {%- else -%}

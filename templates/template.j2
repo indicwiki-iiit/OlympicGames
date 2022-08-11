@@ -158,7 +158,7 @@
 {%- macro get_residence_line(name, residence, country) -%}
     {% if residence and residence != 'None' %}
         {%- set residence_line = [
-                'ఈ అథ్లెట్ ' + residence + ' లో ' + v5 + '. \n',
+                'ఈ అథ్లెట్ ' + residence +'  లో ' + v5 + '. \n',
                 ' [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్స్] లో ' + country + ' తరపున ఆడే ఈ అథ్లెట్ ' + residence + ' లో ' + v6 + '. \n',
                 name + ' ' + residence + ' లో ' + v11 + '. \n',
                 ] | random
@@ -218,7 +218,7 @@
 
 {# To get the Height Line #}
 {%- macro get_height_line(height, name) -%}
-    {% if height and height != '' %}
+    {% if height and height != 'None' %}
         {%- set height_line = [
                 name +  ' ఎత్తు ' + height + ' సెంటీమీటర్లు. \n',
                 'ఈ ' + v1 +  ' ఎత్తు :' + height + ' సెంటీమీటర్లు. \n',
@@ -234,7 +234,7 @@
 
 {# To get the Weight Line #}
 {%- macro get_weight_line(weight, name) -%}
-    {% if weight and weight != '' %}
+    {% if weight and weight != 'None' %}
         {%- set weight_line = [
                 name +  ' బరువు ' + weight + ' కిలోలు. \n',
                 'ఈ ' + v1 +  ' బరువు :' + weight + ' కిలోలు. \n',
@@ -263,8 +263,7 @@
 {%- macro get_state_of_origin(stateOfOrigin, name) -%}
     {%- if stateOfOrigin and stateOfOrigin != 'None' -%}
         {%- set state_of_origin_line = [
-                name + ' యొక్క స్వస్థలం ' + stateOfOrigin + '. \n',
-                name + ' యొక్క మూల రాష్ట్రం ' + stateOfOrigin + '. \n',
+                'ఈ ' + v1 + ' ' + stateOfOrigin + ' కి  ' + v8 + '. \n',
               ] | random
         -%}
     {%- else -%}

@@ -1,0 +1,306 @@
+{# Variables #}
+{% if Gender == 'M' %}
+    {% set v1 = "క్రీడాకారుడు" %}
+    {% set v2 = "పుట్టాడు" %}
+    {% set v3 = "అతడు" %}
+    {% set v4 = "పాల్గొన్నాడు" %}
+    {% set v5 = "ఉంటున్నాడు" %}
+    {% set v6 = "ఉంటాడు" %}
+    {% set v7 = "జన్మించాడు" %}
+    {% set v8 = "చెందినవాడు" %}
+    {% set v9 = "చదువుకున్నాడు" %}
+    {% set v10 = "చేస్కున్నాడు" %}
+    {% set v11 = "నివసిస్తాడు" %}
+    {% set v12 = "ఇతనికి" %}
+    {% set v13 = "గెలుచుకున్నాడు" %}
+{% else %}
+    {% set v1 = "క్రీడాకారిణి" %}
+    {% set v2 = "పుట్టింది" %}
+    {% set v3 = "ఆమె" %}
+    {% set v4 = "పాల్గొంది" %}
+    {% set v5 = "ఉంటున్నది" %}
+    {% set v6 = "ఉంటుంది" %}
+    {% set v7 = "జన్మించింది" %}
+    {% set v8 = "చెందినది" %}
+    {% set v9 = "చదువుకున్నది" %}
+    {% set v10 = "చేసుకుంది" %}
+    {% set v11 = "నివసిస్తుంది" %}
+    {% set v12 = "ఆమెకు" %}
+    {% set v13 = "గెలుచుకుంది" %}
+{% endif %}
+
+{# To get the Infobox #}
+{%- macro get_infobox(name, country, NOC, sport, dob, pob, height, weight, coach, club, residence, education, image, caption, medalsData) -%}
+    {{'{{Infobox sportsperson'}}
+    {%- if name and name != 'None' -%}
+        {{'\n| name = '}} {{name}}
+        {{-'\n| full_name = '-}} {{-name-}}
+    {%- endif -%}
+    {%- if image and image != '' -%}
+        {{'\n| image = '}} {{image}}
+    {%- endif -%}
+    {%- if caption and caption != 'None' and caption != 'nan' -%}
+        {{'\n| caption = '}} {{caption}}
+    {%- endif -%}
+    {%- if dob and dob != 'None' -%}
+        {{'\n| birth_date = '}} {{dob}}
+    {%- endif -%}
+    {%- if pob and pob != 'None' -%}
+        {{'\n| birth_place = '}} {{pob}}
+    {%- endif -%}
+    {%- if residence and residence != 'None' -%}
+        {{'\n| residence = '}} {{residence}}
+    {%- endif -%}
+    {%- if education and education != 'None' -%}
+        {{'\n| education = '}} {{education}}
+    {%- endif -%}
+    {%- if country and country != 'None' -%}
+        {{'\n| country = '}} {{country}}
+    {%- endif -%}
+    {%- if sport and sport != 'None' -%}
+        {{'\n| sport = '}} {{sport}}
+    {%- endif -%}
+    {%- if height and height != 'None' -%}
+        {{'\n| height = '}} {{height}}
+    {%- endif -%}
+    {%- if weight and weight != 'None' -%}
+        {{'\n| weight = '}} {{weight}}
+    {%- endif -%}
+    {%- if coach and coach != 'None' -%}
+        {{'\n| coach = '}} {{coach}}
+    {%- endif -%}
+    {%- if club and club != 'None' -%}
+        {{'\n| club = '}} {{club}}
+    {%- endif -%}
+    {{- medalsData -}}
+    {{"\n}}\n"}}
+{%- endmacro -%}
+
+{# To get the Intro Line #}
+{%- macro get_intro_line(name, country, NOC, sport) -%}
+    {%- set i_line = [
+        '' + name + ' ' + sport + '&lt;ref&gt;' + common_ref + '&lt;/ref&gt;' + ' లో పాల్గొనే ' + v1 + '. \n',
+        '' + name + ' ' + sport + '&lt;ref&gt;' + common_ref + '&lt;/ref&gt;' + ' లో పాల్గొనే ' +  '[https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్] అథ్లెట్. \n',
+        ] | random
+    -%}
+    {{- i_line -}}
+{%- endmacro -%}
+
+{# To get the Date Of Birth and Place of Birth #}
+{%- macro get_dob_pob_line(dob, pob) -%}
+    {%- if dob == 'None' -%}
+        {%- set dob_pob_line = '' -%}
+    {%- else -%}
+        {%- set d_details = dob.split('-') -%}
+        {%- set birth_date = d_details[2] -%}
+        {%- set month = d_details[1] -%}
+        {%- set birth_year = d_details[0] -%}
+        {%- if month == '01' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/జనవరి జనవరి]' -%}
+        {%- elif month == '02' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/ఫిబ్రవరి ఫిబ్రవరి]' -%}
+        {%- elif month == '03' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/మార్చి మార్చి]' -%}
+        {%- elif month == '04' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/ఏప్రిల్ ఏప్రిల్]' -%}
+        {%- elif month == '05' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/మే మే]' -%}
+        {%- elif month == '06' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/జూన్ జూన్]' -%}
+        {%- elif month == '07' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/జూలై జూలై]' -%}
+        {%- elif month == '08' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/ఆగష్టు ఆగష్టు]' -%}
+        {%- elif month == '09' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/సెప్టెంబర్ సెప్టెంబర్]' -%}
+        {%- elif month == '10' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/అక్టోబర్ అక్టోబర్]' -%}
+        {%- elif month == '11' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/నవంబర్ నవంబర్]' -%}
+        {%- elif month == '12' -%}
+            {%- set birth_month = '[https://te.wikipedia.org/wiki/డిసెంబర్ డిసెంబర్]' -%}
+        {%- else -%}
+            {%- set birth_month = '' -%}
+        {%- endif %}
+    {%- endif %}
+    {%- if pob != 'None' -%}
+        {%- if birth_year and birth_month != '' -%}
+            {%- set dob_pob_line = [
+                    '' + v3 + ' ' + birth_year + ' లో ' + birth_month + ' ' + birth_date + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + 'వ తేదీన ' + pob +  ' లో ' + v7 + '. \n',
+                ] | random
+            -%}
+        {%- elif dob != 'None' -%}
+            {%- set dob_pob_line =
+                    '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + pob + ' లో ' + v7 + '. \n'
+            -%}
+        {%- endif -%}
+    {%- else -%}
+        {%- if birth_year and birth_month != '' -%}
+            {%- set dob_pob_line = [
+                    '' + v3 + ' ' + birth_year + ' లో ' + birth_month + ' ' + birth_date + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + 'వ తేదీన ' + v7 + '. \n',
+                ] | random
+            -%}
+        {%- else -%}
+            {%- if dob != 'None' -%}
+                {%- set dob_pob_line =
+                        '' + name + ' ' + dob + '&lt;ref&gt;' + dob_ref + '&lt;/ref&gt;' + ' తేదీన ' + v7 + '. \n'
+                -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endif -%}
+    {{- dob_pob_line -}}
+{%- endmacro -%}
+
+{# To get the Residence #}
+{%- macro get_residence_line(name, residence, country) -%}
+    {% if residence and residence != 'None' %}
+        {%- set residence_line = [
+                'ఈ అథ్లెట్ ' + residence +'  లో ' + v5 + '. \n',
+                ' [https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్స్] లో ' + country + ' తరపున ఆడే ఈ అథ్లెట్ ' + residence + ' లో ' + v6 + '. \n',
+                name + ' ' + residence + ' లో ' + v11 + '. \n',
+                ] | random
+        -%}
+    {% else %}
+        {%- set residence_line = ''
+        -%}
+    {% endif %}
+    {{- residence_line -}}
+{%- endmacro -%}
+
+{# To get the Education Line #}
+{%- macro get_education_line(education, name) -%}
+    {% if education and education !='None' %}
+        {%- set education_line =  [
+                name + ' ' + education + ' లో చదువు పూర్తీ ' +  v10 + '. \n',
+                name + ' ' + education + ' లో ' + v9  + '. \n',
+                ] | random
+        -%}
+    {% else %}
+        {%- set education_line = ''
+        -%}
+    {% endif %}
+    {{- education_line -}}
+{%- endmacro -%}
+
+{# To get the Coach Line #}
+{%- macro get_coach_line(coach, name, sport) -%}
+    {% if coach and coach != 'None' %}
+        {%- set coach_line = [
+                v12 + ' ' + coach + ' కోచింగ్ ఇచ్చారు. \n',
+                name + ' కు ' + sport + ' లో ' + coach + ' కోచింగ్ ఇచ్చారు. \n',
+                '[https://te.wikipedia.org/wiki/ఒలింపిక్_క్రీడలు ఒలింపిక్ గేమ్స్] కి కోచింగ్ ' + coach + ' ఇచ్చారు. \n',
+            ] | random
+         -%}
+    {% else %}
+        {%- set coach_line = ''
+        -%}
+    {% endif %}
+    {{- coach_line -}}
+{%- endmacro -%}
+
+{# To get the Nationality Line #}
+{%- macro get_nationality_line(nationality, name) -%}
+    {% if nationality and nationality != 'None' %}
+        {%- set nationality_line = [
+                'ఈ అథ్లెట్ ' + '[https://te.wikipedia.org/wiki/' + nationality.replace(' ', '_') + ' ' + nationality + ']' + ' కి  ' + v8 + '. \n',
+                'ఈ ' + v1 + ' ' + '[https://te.wikipedia.org/wiki/' + nationality.replace(' ', '_') + ' ' + nationality + ']' + ' కి  ' + v8 + '. \n',
+        ] | random
+        -%}
+    {% else %}
+        {%- set nationality_line =''
+        -%}
+    {% endif %}
+    {{- nationality_line -}}
+{%- endmacro -%}
+
+{# To get the Height Line #}
+{%- macro get_height_line(height, name) -%}
+    {% if height and height != 'None' %}
+        {%- set height_line = [
+                name +  ' ఎత్తు ' + height + ' సెంటీమీటర్లు. \n',
+                'ఈ ' + v1 +  ' ఎత్తు :' + height + ' సెంటీమీటర్లు. \n',
+                'ఈ అథ్లెట్  ఎత్తు :' + height + ' సెంటీమీటర్లు. \n',
+            ] | random
+        -%}
+    {% else %}
+        {%- set height_line = ''
+        -%}
+    {% endif %}
+    {{- height_line -}}
+{%- endmacro -%}
+
+{# To get the Weight Line #}
+{%- macro get_weight_line(weight, name) -%}
+    {% if weight and weight != 'None' %}
+        {%- set weight_line = [
+                name +  ' బరువు ' + weight + ' కిలోలు. \n',
+                'ఈ ' + v1 +  ' బరువు :' + weight + ' కిలోలు. \n',
+                'ఈ అథ్లెట్  బరువు :' + weight + ' కిలోలు. \n',
+            ] | random
+        -%}
+     {% else %}
+        {%- set weight_line = ''
+        -%}
+     {% endif %}
+     {{- weight_line -}}
+{%- endmacro -%}
+
+{# To get the Club #}
+{%- macro get_club(club, name) -%}
+    {%- if club and club != 'None' -%}
+        {%- set club_line = name + ' ' + club + ' క్లబ్ కి ' + v8 + '. \n'
+         -%}
+    {%- else -%}
+        {%- set club_line = '' -%}
+    {%- endif -%}
+    {{- club_line -}}
+{%- endmacro -%}
+
+{# To get the State of Origin #}
+{%- macro get_state_of_origin(stateOfOrigin, name) -%}
+    {%- if stateOfOrigin and stateOfOrigin != 'None' -%}
+        {%- set state_of_origin_line = [
+                'ఈ ' + v1 + ' ' + stateOfOrigin + ' కి  ' + v8 + '. \n',
+              ] | random
+        -%}
+    {%- else -%}
+        {%- set state_of_origin_line = ''
+        -%}
+    {%- endif -%}
+    {{- state_of_origin_line -}}
+{%- endmacro -%}
+
+{# To get the Professional Data #}
+{%- macro get_professional_data(professionalData) -%}
+    {{- professionalData -}}
+{%- endmacro -%}
+
+{# To get the References #}
+{%- macro get_references(name) -%}
+    {{'\n\n==ప్రస్తావనలు==\n&lt;references /&gt;\n\n'}}
+{%- endmacro -%}
+
+{# To get the Categories #}
+{%- macro get_categories(categories) -%}
+    {%- for category in categories -%}
+        {{category}}
+    {%- endfor -%}
+{%- endmacro -%}
+
+{# Function Calls #}
+
+{{ get_infobox(name, country, NOC, sport, dob, pob, height, weight, coach, club, residence, education, image, caption, medalsData) -}}
+{{- get_intro_line(name, country, NOC, sport) -}}
+{{ '\n=వ్యక్తిగత జీవితము=\n' -}}
+{{ get_dob_pob_line(dob, pob) -}}
+{{ get_nationality_line(nationality, name) -}}
+{{ get_residence_line(name, residence, country) -}}
+{{ get_education_line(education, name) -}}
+{{ '\n=క్రీడా జీవితం=\n' -}}
+{{ get_height_line(height, name) -}}
+{{ get_weight_line(weight, name) -}}
+{{ get_coach_line(coach, name, sport) -}}
+{{ get_club(club, name) -}}
+{{ get_professional_data(professionalData) -}}
+{{ get_references(name) -}}
+{{ get_categories(categories) -}}
